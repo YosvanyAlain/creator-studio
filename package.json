@@ -1,0 +1,32 @@
+{
+  "name": "creator-studio",
+  "version": "1.4.4",
+  "description": "Create webxdc mini apps from inside Delta Chat: create \u2192 edit \u2192 blocks \u2192 preview \u2192 validate \u2192 export .xdc. 0 runtime deps.",
+  "private": true,
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node tests/run_tests.js && node tests/test_ui.js",
+    "test:browser": "node tests/test_browser.js && node tests/test_exported_app.js"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^6.2.5",
+    "jsdom": "^24.1.3",
+    "playwright-core": "^1.63.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YosvanyAlain/creator-studio.git"
+  },
+  "homepage": "https://github.com/YosvanyAlain/creator-studio",
+  "bugs": {
+    "url": "https://github.com/YosvanyAlain/creator-studio/issues"
+  },
+  "keywords": [
+    "webxdc",
+    "delta-chat",
+    "miniapp",
+    "nocode",
+    "blocks"
+  ]
+}

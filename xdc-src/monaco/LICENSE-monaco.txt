@@ -1,0 +1,9 @@
+Monaco Editor
+Copyright (c) Microsoft Corporation
+MIT License: https://github.com/microsoft/monaco-editor/blob/main/LICENSE.txt
+Vendored subset: monaco-editor@0.44.0 min/vs
+  - loader.js, editor.main.js/css/nls
+  - basic-languages (syntax highlighting)
+  - base/worker/workerMain.js
+Language services (TypeScript/JSON/HTML/CSS workers) are NOT bundled.
+The Studio uses a dummy worker so the editor runs offline inside webxdc.

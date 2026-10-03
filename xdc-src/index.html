@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101218" media="(prefers-color-scheme: dark)">
+  <title>Webxdc Creator Studio</title>
+  <script src="webxdc.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="cs-splash" class="cs-splash" role="status" aria-live="polite" aria-label="Cargando Creator Studio">
+    <div class="cs-splash-inner">
+      <div class="cs-splash-mark" aria-hidden="true">
+        <span class="cs-splash-bar b1"></span>
+        <span class="cs-splash-bar b2"></span>
+        <span class="cs-splash-bar b3"></span>
+        <span class="cs-splash-spark"></span>
+      </div>
+      <div class="cs-splash-title">Webxdc Creator Studio</div>
+      <div class="cs-splash-sub" id="cs-splash-sub">Cargando…</div>
+      <div class="cs-splash-track" aria-hidden="true"><div class="cs-splash-barfill"></div></div>
+    </div>
+  </div>
+
+  <header class="app-bar">
+    <button id="btn-back" class="btn icon abar-back" aria-label="Back" hidden></button>
+    <div class="abar-titles">
+      <span id="app-title" class="app-title">Webxdc Creator Studio</span>
+      <span id="app-sub" class="app-sub" hidden></span>
+    </div>
+    <span class="abar-indicators">
+      <span id="ind-storage" title=""></span>
+      <span id="ind-webxdc" title=""></span>
+    </span>
+  </header>
+
+  <main id="main" class="main">
+    <section id="view-home" class="view"></section>
+    <section id="view-projects" class="view"></section>
+    <section id="view-templates" class="view"></section>
+    <section id="view-editor" class="view"></section>
+    <section id="view-blocks" class="view"></section>
+    <section id="view-pages" class="view"></section>
+    <section id="view-components" class="view"></section>
+    <section id="view-preview" class="view"></section>
+    <section id="view-inspector" class="view"></section>
+    <section id="view-export" class="view"></section>
+    <section id="view-help" class="view"></section>
+    <section id="view-settings" class="view"></section>
+  </main>
+
+  <nav id="tabbar" class="tabbar" aria-label="Navigation"></nav>
+
+  <!-- Toasts -->
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="core.js"></script>
+  <script src="i18n.js"></script>
+  <script src="db.js"></script>
+  <script src="project.js"></script>
+  <script src="capabilities.js"></script>
+  <script src="snapshots.js"></script>
+  <script src="templates.js"></script>
+  <script src="blocks.js"></script>
+  <script src="game-engine.js"></script>
+  <script src="game-blocks.js"></script>
+  <script src="components.js"></script>
+  <script src="pages.js"></script>
+  <script src="course.js"></script>
+  <script src="audio-editor.js"></script>
+  <script src="image-editor.js"></script>
+  <script src="zip.js"></script>
+  <script src="validator.js"></script>
+  <script src="exporter.js"></script>
+  <script src="highlight.js"></script>
+  <script src="vendor/cm6.js"></script>
+  <script src="monaco-loader.js"></script>
+  <script src="editor.js"></script>
+  <script src="preview.js"></script>
+  <script src="inspector.js"></script>
+  <script src="collab.js"></script>
+  <script src="blocks-ui.js"></script>
+  <script src="app.js"></script>
+  <script>CS.app.init();</script>
+</body>
+</html>

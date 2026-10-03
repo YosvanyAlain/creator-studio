@@ -1,0 +1,20 @@
+{
+  "name": "cs-codemirror-bundle",
+  "private": true,
+  "description": "Builds xdc-src/vendor/cm6.js (CodeMirror 6, MIT) as one offline IIFE.",
+  "scripts": { "build": "esbuild entry.js --bundle --minify --format=iife --global-name=CM6 --legal-comments=none --outfile=../../xdc-src/vendor/cm6.js" },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "@codemirror/state": "^6.5.0",
+    "@codemirror/view": "^6.36.0",
+    "@codemirror/commands": "^6.8.0",
+    "@codemirror/language": "^6.11.0",
+    "@codemirror/autocomplete": "^6.18.0",
+    "@codemirror/search": "^6.5.0",
+    "@codemirror/lang-html": "^6.4.0",
+    "@codemirror/lang-css": "^6.3.0",
+    "@codemirror/lang-javascript": "^6.2.0",
+    "@codemirror/lang-json": "^6.0.0",
+    "@lezer/highlight": "^1.2.0"
+  }
+}

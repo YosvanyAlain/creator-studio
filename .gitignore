@@ -1,0 +1,16 @@
+node_modules/
+package-lock.json
+*.xdc
+!releases/*.xdc
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.idea/
+.vscode/
+uploads/
+demo/
+.stage/
+*-backup*/
+__pycache__/

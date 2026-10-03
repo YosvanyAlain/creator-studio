@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f5f6fb">
+  <title>Webxdc Creator Studio</title>
+  <script>window.__csStart = performance.now();</script>
+  <script src="webxdc.js"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="splash" class="splash" role="status" aria-label="Webxdc Creator Studio">
+    <div class="sp-aura sp-a1" aria-hidden="true"></div>
+    <div class="sp-aura sp-a2" aria-hidden="true"></div>
+    <div class="splash-inner">
+      <div class="sp-stage" aria-hidden="true">
+        <span class="sp-ring sp-r1"></span><span class="sp-ring sp-r2"></span>
+        <svg class="brand-mark sp-mark" viewBox="0 0 64 64">
+          <defs>
+            <linearGradient id="sp-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7a70ff"/><stop offset=".5" stop-color="#5146e0"/><stop offset="1" stop-color="#2f20a8"/></linearGradient>
+            <linearGradient id="sp-shine" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            <radialGradient id="sp-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd66b" stop-opacity=".7"/><stop offset="1" stop-color="#ffd66b" stop-opacity="0"/></radialGradient>
+            <clipPath id="sp-clip"><rect x="2" y="2" width="60" height="60" rx="18"/></clipPath>
+          </defs>
+          <rect class="bm-tile" x="2" y="2" width="60" height="60" rx="18" fill="url(#sp-bg)"/>
+          <g clip-path="url(#sp-clip)"><rect class="sp-shine" x="-30" y="-10" width="22" height="84" fill="url(#sp-shine)" transform="rotate(20 32 32)"/></g>
+          <path class="bm-face bm-top" d="M32 13.5 47.5 22.3 32 31 16.5 22.3z" fill="#ffffff"/>
+          <path class="bm-face bm-left" d="M16.5 25.3 30.5 33.3V49.6L16.5 41.6z" fill="#cfcbff"/>
+          <path class="bm-face bm-right" d="M47.5 25.3 33.5 33.3V49.6L47.5 41.6z" fill="#958dff"/>
+          <path class="sp-edge" d="M16.5 22.3 32 13.5 47.5 22.3" fill="none" stroke="#ffffff" stroke-width=".8" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle class="sp-glow" cx="50" cy="12.7" r="9" fill="url(#sp-glow)"/>
+          <path class="bm-spark" d="M50 7c.45 3.3 2.4 5.25 5.7 5.7-3.3.45-5.25 2.4-5.7 5.7-.45-3.3-2.4-5.25-5.7-5.7 3.3-.45 5.25-2.4 5.7-5.7z" fill="#ffd66b"/>
+          <path class="sp-spark2" d="M43.6 5.6c.16 1.2.87 1.9 2.05 2.05-1.18.16-1.89.87-2.05 2.05-.16-1.18-.87-1.89-2.05-2.05 1.18-.16 1.89-.87 2.05-2.05z" fill="#fff3c4"/>
+        </svg>
+        <i class="sp-ray" style="--a:0deg"></i><i class="sp-ray" style="--a:60deg"></i><i class="sp-ray" style="--a:120deg"></i>
+        <i class="sp-ray" style="--a:180deg"></i><i class="sp-ray" style="--a:240deg"></i><i class="sp-ray" style="--a:300deg"></i>
+      </div>
+      <div class="splash-name"><span class="sp-w">Creator</span> <span class="sp-w sp-grad">Studio</span></div>
+      <div class="splash-tag">Webxdc</div>
+      <div class="splash-track" aria-hidden="true"><i></i></div>
+    </div>
+  </div>
+  <div id="app"></div>
+  <div id="overlays"></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <!-- scripts -->
+  <script>CS.app.boot();</script>
+</body>
+</html>

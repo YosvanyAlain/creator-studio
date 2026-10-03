@@ -1,0 +1,25 @@
+{
+  "name": "creator-studio",
+  "version": "3.0.0",
+  "description": "Create webxdc mini apps from inside Delta Chat, with or without code: templates, visual blocks, a code editor, live multi-peer preview, creative studio and tools. No runtime dependencies.",
+  "private": true,
+  "scripts": {
+    "build": "python3 build.py",
+    "test": "node tests/unit.js",
+    "test:e2e": "python3 build.py --stage && node tests/e2e.js",
+    "test:artifact": "python3 build.py && node tests/artifact.js",
+    "test:all": "npm test && npm run test:e2e && npm run test:artifact"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.63.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "webxdc",
+    "delta-chat",
+    "miniapp",
+    "no-code",
+    "blocks",
+    "editor"
+  ]
+}
